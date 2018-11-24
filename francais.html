@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116963284-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-116963284-1');
+		</script>
+		<title>Jersey Hoeve - De Haan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+				#map {
+				  width: 100%;
+				  height: 400px;
+				  background-color: grey;
+				}
+			  </style>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Jersey Hoeve<br />
+						De Haan</h1>
+						<p>Lait crémeux savoureux de la meilleure qualité!</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Jersey Hoeve - De Haan</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Nederlands</a></li>
+							<li class="active"><a href="francais.html">Français</a></li>
+							<li><a href="deutsch.html">Deutsch</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/jerseyhoevedehaan/" target="new" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/jerseyhoevedehaan/" target="new" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<!-- <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li> -->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date">Mai, 2018</span>
+									<h2>Lait frais</h2>
+									<p>À partir de mai 2018, vous pouvez verser du lait frais de notre boîte de lait tous les jours à la ferme Jersey.</p>
+									<p>Une fois que vous avez le goût du lait frais, vous ne voulez rien d'autre. Visitez la ferme pour une tasse ou une bouteille et goûtez au goût crémeux du lait non traité.</p>
+								</header>
+								<a href="#" class="image main"><img src="images/melktap.jpeg" alt="" /></a>
+								<ul class="actions">
+									<li><a href="#contact" class="button big">Contactez-nous</a></li>
+								</ul>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<a name="contact"></a> 
+					<footer id="footer">
+						<section>
+							<div id="map"></div>
+							<script>
+							function initMap() {
+								var uluru = {lat: 51.255727, lng: 3.044187};
+								var map = new google.maps.Map(document.getElementById('map'), {
+								zoom: 12,
+								center: uluru
+								});
+								var marker = new google.maps.Marker({
+								position: uluru,
+								map: map
+								});
+							}
+							</script>
+							<script async defer
+							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjLD9N83wZ2fWfPqBgRnU9kbaof7AQhWc&callback=initMap">
+							</script>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Adresse</h3>
+								<p>Bredeweg 129<br />
+								8420 De Haan</p>
+							</section>
+							<section>
+								<h3>Téléphone</h3>
+								<p><a href="#">+32 470 13 96 14</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:info@jerseyhoevedehaan.be">info@jerseyhoevedehaan.be</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.facebook.com/jerseyhoevedehaan/" target="new" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/jerseyhoevedehaan/" target="new" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Jersey Hoeve - De Haan</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
